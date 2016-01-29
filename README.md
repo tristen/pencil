@@ -1,4 +1,4 @@
-pencil.js
+pencil
 ---
 
 Super simple JS library that lets users draw on HTML5 canvas elements via
