@@ -1,0 +1,30 @@
+{
+  "name": "pencil",
+  "version": "0.0.0",
+  "description": "A freeform draw tool for canvas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "documentation index.js --format=md > API.md",
+    "build": "browserify index.js | uglifyjs -c -m > dist/pencil.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tristen/pencil.git"
+  },
+  "keywords": [
+    "canvas",
+    "draw"
+  ],
+  "author": "ofagbemi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tristen/pencil/issues"
+  },
+  "homepage": "https://github.com/tristen/pencil#readme",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "documentation": "^3.0.4",
+    "uglify-js": "^2.6.1"
+  }
+}
