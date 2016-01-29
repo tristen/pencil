@@ -8,18 +8,6 @@
     -   `options.color` **[number]** defaults to black
 -   `canvasEl`  
 
-## _bres
-
-Runs Bresenham's line algorithm on two coordinates to determine pixels that
-make up a line between them
-
-**Parameters**
-
--   `c0` **object** 
--   `c1` **object** 
-
-Returns **Array&lt;object&gt;** an array of pixel coordinates
-
 ## clear
 
 Erases all the pixels on the canvas

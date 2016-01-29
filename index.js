@@ -31,7 +31,7 @@ function bindHandlers(context) {
   }
 }
 
-/**
+/*
  * Runs Bresenham's line algorithm on two coordinates to determine pixels that
  * make up a line between them
  * @param {object} c0
