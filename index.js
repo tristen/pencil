@@ -1,6 +1,6 @@
 'use strict';
 
-var EventEmitter = require('events').EventEmitter;
+const mitt = require('mitt');
 
 /**
  * @param {HTMLCanvasElement} canvas
@@ -19,7 +19,7 @@ var Pencil = function(canvasEl, options) {
 
   this._pixels = {};
   this._collection = [];
-  this._ev = new EventEmitter();
+  this._ev = mitt();
   bindHandlers(this);
 };
 
@@ -315,7 +315,7 @@ Pencil.prototype.fire = function(type, data) {
  * @returns {Pencil} this
  */
 Pencil.prototype.off = function(type, fn) {
-  this._ev.removeListener(type, fn);
+  this._ev.off(type, fn);
   return this;
 };
 

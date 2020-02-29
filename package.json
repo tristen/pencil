@@ -26,5 +26,8 @@
     "browserify": "^13.0.0",
     "documentation": "^3.0.4",
     "uglify-js": "^2.6.1"
+  },
+  "dependencies": {
+    "mitt": "^1.2.0"
   }
 }
