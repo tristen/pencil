@@ -1,6 +1,6 @@
 'use strict';
 
-const mitt = require('mitt');
+const mitt = require('mitt').default;
 
 /**
  * @param {HTMLCanvasElement} canvas
@@ -9,7 +9,7 @@ const mitt = require('mitt');
  * @param {number} [options.color] defaults to black
  * @class
  */
-var Pencil = function(canvasEl, options) {
+const Pencil = function(canvasEl, options) {
   options = options || {};
 
   this._currentPixel = undefined;
